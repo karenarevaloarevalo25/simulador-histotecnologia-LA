@@ -1,0 +1,37 @@
+<div class="simulador-container">
+  <aside class="sidebar">
+    <h2>Menú Principal</h2>
+    <button onclick="cambiarEtapa(1)">1. FIJACIÓN</button>
+    <button onclick="cambiarEtapa(2)">2. DESHIDRATACIÓN</button>
+    </aside>
+
+  <main class="pantalla-principal">
+    <header>
+      <h1>ETAPA: FIJACIÓN</h1>
+      <div class="puntaje">Puntaje: <span id="score">0</span>/100</div>
+    </header>
+
+    <section class="configuracion">
+      <div class="frasco-display">
+        <img id="muestra-img" src="tejido_fresco.jpg" alt="Muestra">
+      </div>
+
+      <div class="controles">
+        <h3>Selecciona el Reactivo:</h3>
+        <select id="reactivo">
+          <option value="agua">Agua Destilada</option>
+          <option value="formol">Formol 10% Tamponado</option>
+          <option value="alcohol">Alcohol 70%</option>
+        </select>
+
+        <h3>Tiempo (Horas):</h3>
+        <input type="number" id="tiempo" placeholder="24">
+
+        <button class="btn-iniciar" onclick="validarFijacion()">INICIAR PROCESO</button>
+      </div>
+    </section>
+
+    <div id="feedback-visual">
+       </div>
+  </main>
+</div>
